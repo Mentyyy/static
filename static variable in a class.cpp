@@ -5,12 +5,12 @@ Also because of this reason static variables can not be initialized using constr
 
 In the program below we try to create multiple copies of the static variable `i` for multiple objects. But this won't happen.
 */
-class GfG
+class Demo
 {
    public:
      static int i;
       
-     GfG()
+     Demo()
      {
         // Do nothing
      };
@@ -18,8 +18,8 @@ class GfG
   
 int main()
 {
-  GfG obj1;
-  GfG obj2;
+  Demo obj1;
+  Demo obj2;
   obj1.i =2;
   obj2.i = 3;
     
@@ -32,22 +32,22 @@ int main()
 Static variable inside a class should be initialized explicitly by the user using the class name and scope resolution operator 
 outside the class as shown below:
 */
-class GfG
+class Demo
 {
 public:
     static int i;
       
-    GfG()
+    Demo()
     {
         // Do nothing
     };
 };
   
-int GfG::i = 1;
+int Demo::i = 1;
   
 int main()
 {
-    GfG obj;
+    Demo obj;
     // prints value of i
     cout << obj.i; 
 }
