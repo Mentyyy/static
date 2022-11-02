@@ -5,7 +5,7 @@ Even if the function is called multiple times, space for the static variable is 
 and the value of variable in the previous call gets carried through the next function call.
 */
 #include <iostream>
-#include <string>
+
 using namespace std;
   
 void demo()
