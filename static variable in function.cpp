@@ -28,3 +28,6 @@ int main()
 }
 
 // Output: 0 1 2 3 4
+
+// The variable `count` is not getting initialized for every time the function is called.
+// As a side note: Java doesn’t allow static local variables in functions.
