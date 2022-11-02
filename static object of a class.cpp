@@ -7,14 +7,14 @@ So when the object is created the constructor is invoked and soon as the control
 #include<iostream>
 using namespace std;
   
-class GfG
+class Demo
 {
     public:
-        GfG()
+        Demo()
         {
             cout << "Inside Constructor\n";
         }
-        ~GfG()
+        ~Demo()
         {
             cout << "Inside Destructor\n";
         }
@@ -25,7 +25,7 @@ int main()
     int x = 0;
     if( x==0 )
     {
-        GfG obj;
+        Demo obj;
     }
     cout << "End of main\n";
 }
@@ -39,18 +39,18 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 Now the destructor will be invoked after the end of main. 
 This will happene because the scope of static object is throughout the life time of program.      
 */
-class GfG
+class Demo
 {
     int i = 0;
       
     public:
-    GfG()
+    Demo()
     {
         i = 0;
         cout << "Inside Constructor\n";
     }
       
-    ~GfG()
+    ~Demo()
     {
         cout << "Inside Destructor\n";
     }
@@ -61,7 +61,7 @@ int main()
     int x = 0;
     if (x==0)
     {
-        static GfG obj;
+        static Demo obj;
     }
     cout << "End of main\n";
 }
