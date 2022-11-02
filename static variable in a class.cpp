@@ -51,3 +51,4 @@ int main()
     // prints value of i
     cout << obj.i; 
 }
+// Output: 1
