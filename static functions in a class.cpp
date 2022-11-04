@@ -6,7 +6,7 @@ it is recommended to invoke the static members using the class name and the scop
 Static member functions are allowed to access only the static data members or other static member functions, 
 they can not access the non-static data members or member functions of the class.
 */
-#include<iostream>
+#include <iostream>
 using namespace std;
   
 class Demo
