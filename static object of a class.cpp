@@ -4,7 +4,7 @@ Just like variables, objects also when declared as static have a scope till the 
 In the program below the object is declared inside the `if` block as non-static. So, the scope of variable is inside the `if` block only. 
 So when the object is created the constructor is invoked and soon as the control of `if` gets over it invokes destructor.
 */
-#include<iostream>
+#include <iostream>
 using namespace std;
   
 class Demo
@@ -23,7 +23,7 @@ class Demo
 int main()
 {
     int x = 0;
-    if( x==0 )
+    if( x == 0 )
     {
         Demo obj;
     }
@@ -59,7 +59,7 @@ class Demo
 int main()
 {
     int x = 0;
-    if (x==0)
+    if( x == 0 )
     {
         static Demo obj;
     }
