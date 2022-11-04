@@ -22,7 +22,7 @@ void demo()
   
 int main()
 {
-    for( int i=0; i<5; i++ )    
+    for( int i = 0; i < 5; i++ )    
         demo();
     return 0;
 }
